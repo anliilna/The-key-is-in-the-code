@@ -41,4 +41,3 @@ Bon tant pis.
 
 
 
-https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiCtYXZq6H-AhUFTaQEHSLkAPsQFnoECAoQAQ&url=https%3A%2F%2Fwww.clownillustration.com%2Fwelcomehomeyou&usg=AOvVaw0349ljt9N6um5qeZ0VtBeB
