@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="../static/votre_nom.css">
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet'>
+		<title>W</title>
+	</head>
+	
+	<style>
+	
+body 
+	{
+    font-family: 'VT323', monospace, sans-serif;
+      background: #000;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-image: none;
+    background-size: auto;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0)), linear-gradient(to bottom, #000, #000 2px, #111 3px);
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-size: cover, 100% 3px;
+    }
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter 
+	{
+	font-size: 4em;
+    color: #3f3;
+    filter: drop-shadow(0 0 0.3rem #3f3);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .40em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(27, end),
+      blink-caret .95s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #3f3 }
+}
+
+h2
+  {
+  display: flex;
+  justify-content: center;
+    color: transparent;
+	position: absolute;
+}
+
+input 
+	{
+    font-family: 'VT323', monospace, sans-serif;
+	font-size: 22px;
+	text-align: center;
+    margin:auto;
+    display:block;
+	}
+	</style>
+	<body>
+		<form action="/a" method="POST">
+			<h1 class="typewriter">Veuillez saisir votre nom:</h1>
+			<input 
+				type="text"
+				name="nom"
+				id="MonPseudo"
+				placeholder="4 caractères minimum"
+				required
+				size="30"
+				minlength="4"/>
+		</form>
+		<h2>indice ici: (indice pécédent: prend le ConTRoLe A partir du début.)</h2>
+	</body>
+</html>

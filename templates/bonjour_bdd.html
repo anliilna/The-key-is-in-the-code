@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bonjour v0.5</title>
+    </head>
+    <body>
+        <h1>Bonjour {{nom}}</h1>
+        <ul>
+            {% for personne in personnes %}
+            <li>id={{ personne[0] }}, nom={{ personne[1] }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

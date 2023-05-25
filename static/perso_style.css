@@ -1,0 +1,156 @@
+* 
+    {margin: 0;
+    padding: 0;
+    box-sizing: border-box}
+
+body
+	{text-align: center;
+    font-size: 14px;
+	font-family: 'Almendra SC';
+    min-height: 100vh;
+    width: 100%;
+    background: url(./images/po.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px}
+
+h1
+	{position: absolute;
+	top: 50px;
+	font-family: 'Almendra SC';
+    font-size: 40px;
+	text-align: center}
+	
+h3
+	{position: absolute;
+    font-size: 20px;
+	top: 130px;
+	font-family: 'Almendra SC';
+	text-align: center}
+
+.container 
+    {position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap}
+
+.card 
+    {position: relative;
+    width: 270px;
+    margin: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px 1fr auto}
+
+.card-body,
+.card-footer 
+    {display: flex;
+    flex-direction: column;
+    align-items: center}
+
+.card-image 
+    {position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/img5.png)}
+
+.card-image img 
+    {max-width: 95%;
+    max-height: 95%;
+    transition: max-width 0.4s, max-height 0.4s}
+
+.card:nth-child(1) img
+    {filter: drop-shadow(0 0 0.9rem #6a992f)}
+
+.card:nth-child(2) img
+    {filter: drop-shadow(0 0 0.9rem #9e682f)}
+
+.card:nth-child(3) img
+    {transform: scaleX(-1);
+    filter: drop-shadow(0 0 0.9rem #1c5784)}
+
+.card:nth-child(4) img
+    {filter: drop-shadow(0 0 0.9rem #d66133)}
+
+.card:hover .card-image img 
+    {max-width: 120%;
+    max-height: 120%}
+
+
+.card 
+    {cursor: pointer}
+
+.card:nth-child(2) .card-image 
+    {background: url(./images/img6.png)}
+
+.card:nth-child(3) .card-image 
+    {background: url(./images/img7.png)}
+
+.card:nth-child(4) .card-image 
+    {background: url(./images/img8.png)}
+
+.card-body 
+    {padding: 20px 28px}
+
+.card-body .species 
+    {margin: 10px auto 1px;
+    font-weight: bolder}
+
+.card-body h2 
+    {font-size: 1.8em}
+
+.card:nth-child(1) .species 
+    {color: #819963}
+
+.card:nth-child(2) .species 
+    {color: #9e8a75}
+
+.card:nth-child(3) .species 
+    {color: #546f84}
+
+.card:nth-child(4) .species 
+    {color: #d68160}
+
+.selector 
+    {position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s}
+
+.card:hover .selector 
+    {opacity: 1}
+
+.selector button 
+    {background-color: #819963;
+    color: #fff;
+    outline: none;
+    border: 2px solid currentColor;
+    cursor: pointer;
+    padding: 12px 20px;
+    transform: translateY(60px);
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.1em;
+    font-weight: bolder;
+    transition: opacity 0.3s}
+
+.card:nth-child(2) .selector button 
+    {background-color: #9e8a75}
+
+.card:nth-child(3) .selector button 
+    {background-color: #546f84}
+
+.card:nth-child(4) .selector button 
+    {background-color: #d68160}
