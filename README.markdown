@@ -7,7 +7,7 @@ Il faudra essayer de prendre le **C**on**TR**o**L**e a p**A**rtir du début.-.
 Dans le code:.  
 -def pour charger les pages du site (flask)/   
 -fichier html et css pour les interfaces des différentes pages-.-.  
--regardez bien, quelque chose pourrait vous aider-.-. 
+-regardez bien, quelque chose pourrait vous aider-.-.  
 -vous êtes encore là?-.-.  
 -il n'y a plus rien à voir ici....  
 
